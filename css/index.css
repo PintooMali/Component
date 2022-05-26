@@ -39,23 +39,16 @@ body {
 .sub{ -ms-overflow-style: none; }
 .sub{scrollbar-width: none;} */
 /* add on services */
-.grido{
 
-    display: grid;
-    grid-gap:20px;
-    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
-    
-    
-}
 
 /* .pdd-5{
     padding:130px;
 } */
-
-
-.grido>div>div>img{
+div>div>div>img{
     width:100%;
 }
+
+
 
 
 
@@ -142,33 +135,42 @@ body {
     }
 
 }
-@media only screen and (max-width:290px) {
-    .grido{ grid-template-columns: 2fr;
-    }
- }
+
 @media only screen and (max-width:1127px) and (min-width:900px){
-    .grido2{ grid-template-columns: repeat(auto-fit,500px)!important;
+    /* .grido2{ grid-template-columns: repeat(auto-fit,500px)!important;
         grid-auto-columns: 500px!important
-    }
+    } */
     .mover-main{
         display: block!important;
     }
 }
 
 @media only screen and (max-width:900px) and (min-width:743px){
-    .grido2{ grid-template-columns: repeat(auto-fit,400px)!important;
+    /* .grido2{ grid-template-columns: repeat(auto-fit,400px)!important;
         grid-auto-columns: 400px!important
-    }
+    } */
 
     .mover-main{
         display: block!important;
     }
 }
+
+
 /* 1127 743 */
 
 /* airbnb part start */
-
 .grido2{
+    overflow: scroll;
+    width:auto;
+    overflow: -moz-scrollbars-none; 
+    scrollbar-width: none;
+}
+.pm{
+    display: inline-block;
+    float: none;
+}
+.grido2::-webkit-scrollbar{display: none;}
+/* .grido2{
 
     display: grid;
     grid-gap:20px;
@@ -182,11 +184,11 @@ body {
     
 }
 
-.grido2::-webkit-scrollbar{display: none;}
-.grido2>div>div>img{
+.grido2::-webkit-scrollbar{display: none;}*/
+.grido2>div>div>.imgG{
     width:100%;
     border-radius: 3%;
-}
+} 
 
 .pdd-5{
     font-size: 1.1em;
