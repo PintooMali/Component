@@ -1,0 +1,257 @@
+/* ............................Default size of dom...................... */
+body {
+    margin:0px;
+    font-family: 'Arimo' , 'sans-serif' !important;
+}
+
+/* ..............................Main Container......................... */
+.main {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    background-color: white;
+    height: auto;
+}
+
+/* ............................Sub Container............................ */
+.sub {
+    position: relative;
+    top: 10%;
+    left: 7.5%;
+    background-color: white;
+    height: auto;
+    width: 85%;
+
+
+}
+.main-sub{
+    margin-top:2%;
+    background-color: #f7f7f7;
+    width:100%;
+    height: 507px;
+}
+
+
+
+/* used to hide scrollbar but still scroll */
+/* .sub::-webkit-scrollbar{display: none;}
+.sub{ overflow: -moz-scrollbars-none; }
+.sub{ -ms-overflow-style: none; }
+.sub{scrollbar-width: none;} */
+/* add on services */
+.grido{
+
+    display: grid;
+    grid-gap:20px;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    
+    
+}
+
+/* .pdd-5{
+    padding:130px;
+} */
+
+
+.grido>div>div>img{
+    width:100%;
+}
+
+
+
+
+
+/* .............................Paragraph.............................. */
+
+
+/* ................................google api....................................... */
+.gapi {
+    width: 100%;
+    height: 530px;
+    background-color: white;
+}
+
+@media only screen and (max-width:576px) {
+
+    .gapi {
+        border-radius: 5%;
+        height: 270px
+    }
+}
+
+/* ........................After Gapi....................... */
+.link,
+.link:hover {
+    color: black;
+}
+/* responsive thing part */
+.responsive {
+    display: none;
+}
+
+.resp-row {
+    display: grid;
+    grid-template-columns: repeat(3, auto-fill);
+}
+
+.resp-row>div {
+    justify-self: start;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+.resp-heading {
+    font-size: 1.5em;
+    position: relative;
+    top: 8px;
+}
+
+.resp-heading2 {
+    position: relative;
+    top: 5px;
+    opacity: 0.7;
+}
+
+.resp-row>div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.resp-row>div>div:last-child {
+    margin-top: 15px;
+    font-size: 1.5em;
+}
+
+@media only screen and (max-width:770px) {
+
+    .respo {
+        display: none;
+    }
+
+    .responsive {
+        display: block;
+    }
+    .addon{
+        width: 100%;
+    }
+    .grido{
+        grid-template-columns: 2fr 2fr;
+    }
+
+}
+@media only screen and (max-width:290px) {
+    .grido{ grid-template-columns: 2fr;
+    }
+ }
+@media only screen and (max-width:1127px) and (min-width:900px){
+    .grido2{ grid-template-columns: repeat(auto-fit,500px)!important;
+        grid-auto-columns: 500px!important
+    }
+    .mover-main{
+        display: block!important;
+    }
+}
+
+@media only screen and (max-width:900px) and (min-width:743px){
+    .grido2{ grid-template-columns: repeat(auto-fit,400px)!important;
+        grid-auto-columns: 400px!important
+    }
+
+    .mover-main{
+        display: block!important;
+    }
+}
+/* 1127 743 */
+
+/* airbnb part start */
+
+.grido2{
+
+    display: grid;
+    grid-gap:20px;
+    grid-auto-flow: column;
+    grid-auto-columns: 300px;
+    overflow: scroll;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    overflow: -moz-scrollbars-none; 
+    scrollbar-width: none;
+    width:auto;
+    
+}
+
+.grido2::-webkit-scrollbar{display: none;}
+.grido2>div>div>img{
+    width:100%;
+    border-radius: 3%;
+}
+
+.pdd-5{
+    font-size: 1.1em;
+}
+
+
+.mover{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.left-mover{
+    background-color: white;
+    border-radius: 50%;
+    padding-left:8px;
+    padding-right:8px;  
+    border-color: transparent;
+    cursor:not-allowed;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);   
+}
+
+.right-mover{
+
+    background-color: white;
+    border-color: transparent;  
+    padding-left:8px;
+    border-radius: 50%;
+    padding-right:8px; 
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);    
+}
+.left-mover:hover,.right-mover:hover{
+    background-color: #f7f7f7;
+}
+
+.mover-span{
+    font-size: 0.7em;
+}
+
+
+.mover-main{
+    display: none;
+}
+ /* airbnb part end */
+
+ /* review start */
+
+ /* review end */
+
+/* last part before footer */
+
+.mtt-5 {
+    margin-top: 5%;
+}
+
+/* button last part */
+.btn-outline-light {
+    border-color: black;
+    color: black;
+font-size: 1.03em;
+font-weight:600;
+}
+.btn-outline-light:hover{
+    border-color: black;
+}
+
+
+
