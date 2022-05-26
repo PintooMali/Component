@@ -1,7 +1,7 @@
 
 //outdoor ajax request
 let outdoor=[],indoor=[],essential=[];
-$.get('https://my-json-server.typicode.com/pintoomali/hotel/amenities',data=>{
+$.get('https://my-json-server.typicode.com/pintoomali/hotel/amenities',data=>{//ajax request
     outdoor=data.outdoor;
     indoor=data.indoor;
     essential=data.Essentials;
