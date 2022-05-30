@@ -1,0 +1,31 @@
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script>
+
+            
+            let images=[];
+            $.get('images.json',((response)=>{
+                images=response;
+                
+            }));
+
+           
+         
+
+            $(document).ajaxStart(()=>{
+    // show loader on start
+    alert('loading');
+}).ajaxSuccess(function() {
+                let j=1;
+  for(i=0;i<images.images.length;i++){
+      
+      $('.img-container').append(`
+             <img class="img${j}" src="${images.images[i].url}" data-bs-toggle="modal"
+                    data-bs-target="#CarousalModal" data-bs-slide-to="${i}">`)
+                    j++
+                    if(j==4){
+                        j=1;
+                    }
+}
+});
+
+        </script>
