@@ -258,5 +258,9 @@ font-weight:600;
     border-color: black;
 }
 
-
-
+.flexo::-webkit-scrollbar{display: none;}
+.flexo{
+    overflow-x: scroll;
+    overflow: -moz-scrollbars-none; 
+    scrollbar-width: none;
+}
